@@ -10,6 +10,7 @@ const TuitsController = (app) => {
 };
 
 const createTuit = async (req, res) => {
+  console.log("CREATE NEW TUIT");
   const newTuit = req.body;
   newTuit.likes = 0;
   newTuit.dislikes = 0;
